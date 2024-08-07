@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div class="form-box">
+    <div class="form">
+      <span class="title">Sign up</span>
+      <span class="subtitle">Create a free account with your email.</span>
+      <div class="form-container">
+        <input type="text" class="input" placeholder="Full Name"  [(ngModel)]="signupObj.name">
+        <input type="email" class="input" placeholder="Email" [(ngModel)]="signupObj.email">
+        <input type="password" class="input" placeholder="Password" [(ngModel)]="signupObj.password">
+        <input type="text" class="input" placeholder="Enter Department" [(ngModel)]="signupObj.departement">
+      </div>
+      <button (click)="getFormSignUpValues()">Sign up</button>
+    </div>
+    <div class="form-section">
+      <p>Have an account? <a routerLink="/">Log in</a> </p>
+    </div>
+  </div>
+</div>
+  

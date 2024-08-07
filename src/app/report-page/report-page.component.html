@@ -1,0 +1,16 @@
+
+<app-header></app-header>
+<div class="center">
+  <ng-container *ngFor="let user of employeeList">
+    <div class="card-container" *ngIf="user.role != 'manager'" >
+      <img class="round" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" height="100px" alt="user" />
+      <h3>{{user.name}}</h3>
+      <h5>{{user.role}}</h5>
+      <h6>{{user.status}}</h6>
+      <h4> <b>Id </b>{{user.employeeid}}</h4>
+      
+    </div>
+    </ng-container>
+  </div>
+    
+
